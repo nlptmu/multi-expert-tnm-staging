@@ -2,11 +2,12 @@
 
 ## Overview
 
-This repository contains the source code for **automated TNM staging from lung cancer radiology reports** using large language model (LLM) ensembles. Our systems achieved **1st and 2nd place** in the NTCIR-18 RadNLP 2024 English main task competition.
+This repository contains the source code for **Large Language Model Ensemble for Automated TNM Staging from Radiology Reports**. Our systems achieved **1st and 2nd place** in the [NTCIR-18 RadNLP 2024](https://sociocom.naist.jp/radnlp-2024/) English main task competition.
 
 **Key Achievements:**
 - **System I**: 1st place with joint accuracy of 0.6543 (T: 0.7037, N: 0.9136, M: 0.8889)
 - **System II**: 2nd place with joint accuracy of 0.6296 (T: 0.7284, N: 0.9383, M: 0.8395)
+[more detail](https://huggingface.co/spaces/RadNLP/RadNLP2024_FormalRun_English_MainTask)
 
 ## Systems Description
 
