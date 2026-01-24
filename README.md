@@ -102,14 +102,6 @@ The systems were evaluated on the **NTCIR-18 RadNLP TNM Staging Task** dataset:
 | System I | 1st | 0.6543 | 0.7037 | 0.9136 | 0.8889 |
 | System II | 2nd | 0.6296 | 0.7284 | 0.9383 | 0.8395 |
 
-### Validation Performance
-
-**System I Validation Results:**
-- Joint accuracy: 0.91
-- T accuracy: 0.94
-- N accuracy: 1.0  
-- M accuracy: 0.96
-
 ## Key Features
 
 - **Clinical Reasoning**: Both systems provide interpretable clinical reasoning for TNM classifications
