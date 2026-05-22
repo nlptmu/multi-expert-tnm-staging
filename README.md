@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20338561.svg)](https://doi.org/10.5281/zenodo.20338561)
+
 # Large Language Model Ensemble for Automated TNM Staging from Radiology Reports
 
 ## Overview
