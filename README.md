@@ -1,4 +1,4 @@
-# Multi-Expert TNM Staging for Lung Cancer Radiology Reports
+# Large Language Model Ensemble for Automated TNM Staging from Radiology Reports
 
 ## Overview
 
@@ -8,7 +8,7 @@ This repository contains the source code for **Large Language Model Ensemble for
 - **System I**: 1st place with joint accuracy of 0.6543 (T: 0.7037, N: 0.9136, M: 0.8889)
 - **System II**: 2nd place with joint accuracy of 0.6296 (T: 0.7284, N: 0.9383, M: 0.8395)
 
-more detail, please refer to [RadNLP/RadNLP2024_FormalRun_English_MainTask](https://huggingface.co/spaces/RadNLP/RadNLP2024_FormalRun_English_MainTask)
+For more details, please refer too [RadNLP/RadNLP2024_FormalRun_English_MainTask](https://huggingface.co/spaces/RadNLP/RadNLP2024_FormalRun_English_MainTask)
 
 ## Systems Description
 
@@ -25,7 +25,7 @@ System I uses **GPT-4o with structured reasoning** and expert-grounded few-shot 
 
 System II implements a **multi-model consensus approach** simulating collaborative medical expert panels:
 
-- **Dual-model architecture**: Alternating between GPT-4o and Gemini-2
+- **Dual-model architecture**: Alternating between GPT-4o and gemini-2.0-flash-exp
 - **DSPy framework**: Declarative programming for modular AI systems
 - **MIPROv2 optimization**: Joint optimization of instructions and few-shot demonstrations
 - **Five-iteration consensus mechanism**: Multiple independent assessments with final synthesis
@@ -39,7 +39,7 @@ System II implements a **multi-model consensus approach** simulating collaborati
 
 ### API Access
 - OpenAI GPT-4o API key
-- Google Gemini-2 API key (for System II)
+- Google Gemini API key (gemini-2.0-flash-exp) (for System II)
 
 ## Installation
 
@@ -93,7 +93,7 @@ The systems were evaluated on the **NTCIR-18 RadNLP TNM Staging Task** dataset:
 
 **Multi-Model Configuration:**
 - `num_iterations = 5`
-- `models = ["gpt-4o", "gemini-2"]`
+- `models = ["gpt-4o", "gemini-2.0-flash-exp"]`
 
 ## Performance Results
 
@@ -117,12 +117,12 @@ The systems were evaluated on the **NTCIR-18 RadNLP TNM Staging Task** dataset:
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@article{your_paper_2024,
-  title={Multi-Expert LLM Ensemble for Automated TNM Staging from Lung Cancer Radiology Reports},
-  author={[Authors]},
+@article{yeh2026llm,
+  title={Large Language Model Ensemble for Automated TNM Staging from Radiology Reports},
+  author={Yeh, Wen-Chao and Chen, Yi-Shin and Hsu, Wen-Lian and Yada, Shuntaro and Chang, Yung-Chun},
   journal={Bioinformatics},
   year={2026},
-  note={Submitted}
+  note={Advance Access}
 }
 ```
 
@@ -137,8 +137,8 @@ We welcome contributions! Please feel free to submit a Pull Request.
 ## Contact
 
 For questions or issues, please contact:
-- [Your Name] - [your.email@institution.edu]
-- [Co-author Name] - [coauthor.email@institution.edu]
+- Yung-Chun Chang - changyc@tmu.edu.tw (Graduate Institute of Data Science, Taipei Medical University)
+- Shuntaro Yada - yada@slis.tsukuba.ac.jp (Institute of Library, Information and Media Science, University of Tsukuba)
 
 ## Acknowledgments
 
@@ -146,7 +146,10 @@ For questions or issues, please contact:
 - OpenAI for GPT-4o API access
 - Google for Gemini-2 API access
 - DSPy framework developers
+- Large language models (GPT-4o and Gemini-2) were used as algorithmic techniques for automated TNM staging classification in accordance with ISCB acceptable use policies, with all usage under direct researcher supervision and responsibility.
+- This work was supported by the National Science and Technology Council of Taiwan under grants NSTC 112-2622-E-038-001, NSTC 113-2221-E-038-019, NSTC 113-2627-M-A49-002, NSTC 113-2321-B-038-012, and NSTC 113-2321-B-038-006.
+- This research was partially supported by the National Science and Technology Council of Taiwan, under the program of AI Thematic Research Program to Cope with National Grand Challenges, project NSTC 113-2634-F-A49-004, in collaboration with the Pervasive Artificial Intelligence Research Labs of the National Yang Ming Chiao Tung University.
 
 ---
 
-**Note**: This repository contains the implementation of systems that achieved 1st and 2nd place in the NTCIR-18 RadNLP 2024 English main task for automated TNM staging from lung cancer radiology reports.
+**Note**: This repository contains the implementation of systems that achieved 1st and 2nd place in the NTCIR-18 RadNLP 2024 English main task for automated TNM staging from radiology reports.
